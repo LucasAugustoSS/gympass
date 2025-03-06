@@ -13,7 +13,7 @@ interface AuthenticUseCaseResponse {
 }
 
 export class AuthenticUseCase {
-  constructor(private usersRepository: UsersRepository) {}
+  constructor(readonly usersRepository: UsersRepository) {}
 
   async execute({
     email,
